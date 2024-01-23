@@ -5,7 +5,7 @@ import { createHash } from 'crypto'
 
 const utf8: SpawnSyncOptionsWithStringEncoding = { encoding: 'utf-8' }
 const rf = { recursive: true, force: true }
-
+/** command */
 function ensure (result: ReturnType<typeof spawnSync>) {
   if (result.status !== 0) {
     throw new Error('Command fails.')
